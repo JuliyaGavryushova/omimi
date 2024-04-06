@@ -1201,6 +1201,10 @@ a {
     padding-bottom: 5px;
 }
 
+.footer__text2 {
+    display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1440px) {
 
     /* 1. Шапка */
@@ -2253,6 +2257,10 @@ a {
     .link__item {
         font-size: 15px;
     }
+
+    .footer__text2 {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -3298,7 +3306,7 @@ a {
     }
 
     .footer__contacts {
-        gap: 15px;
+        gap: 10px;
     }
 
     .whatsapp {
@@ -3310,7 +3318,13 @@ a {
     }
 
     .footer__text {
-        font-size: 8px;
+       display: none;
+    }
+
+    .footer__text2 {
+        display: block;
+        font-size: 10px;
+        color: var(--bg);
     }
 
     .footer__links {
