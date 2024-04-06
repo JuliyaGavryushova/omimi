@@ -1,0 +1,3319 @@
+@font-face {
+    font-family: 'intro_bold';
+    src: url('../fonts/intro_bold.eot');
+    src: url('../fonts/intro_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/intro_bold.otf') format('otf'),
+         url('../fonts/intro_bold.svg#intro_bold') format('svg'),
+         url('../fonts/intro_bold.ttf') format('truetype'),
+         url('../fonts/intro_bold.woff') format('woff'),
+         url('../fonts/intro_bold.woff2') format('woff2');
+}
+
+:root {
+    --comfortaa: "Comfortaa", sans-serif;
+    --intro-bold: 'intro_bold', sans-serif;
+    --light-grey: rgb(232, 227, 227);
+    --dark-grey: rgb(45, 45, 45);
+    --bg: rgb(255, 255, 255);
+    --dark-orange: rgb(222, 89, 34);
+    --light-orange: rgb(240, 131, 10);
+    --black: rgb(0, 0, 0);
+}
+
+body {
+    font-family: var(--intro-bold);
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .center {
+    padding-left: calc(50% - 746px);
+    padding-right: calc(50% - 746px);
+} */
+
+.center {
+    padding-left: clamp(10px, 3vw, 35px);
+    padding-right: clamp(10px, 3vw, 35px);
+}
+
+/* 1. Шапка */
+
+.header {
+    min-height: 94px;
+    background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__number {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.header__num {
+    font-family: var(--comfortaa);
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
+.header__button-menu {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.header__button {
+    display: inline-flex;
+    cursor: pointer;
+    background-color: var(--dark-orange);
+    border: none;
+    border-radius: 30px;
+    color: var(--bg);
+    font-family: var(--comfortaa);
+    padding: 15px 16px;
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background-color: var(--light-grey);
+    border: none;
+}
+
+.menu__item {
+    width: 25px;
+    height: 3px;
+    background-color: var(--black);
+    border: none;
+}
+
+.menu__item:nth-child(1) {
+    width: 56px;
+}
+
+/* 2. Стань владельцем кофейни */
+
+.about {
+    min-height: 868px;
+    background-color: var(--bg);
+}
+
+.about__container {
+    width: 1492px;
+    position: relative;
+    margin: auto;
+}
+
+.about__title {
+    margin: 0;
+    text-align: center;
+    align-self: end;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+}
+
+.about__omimi {
+    position: absolute;
+    top: 123px;
+    left: 0px;
+}
+
+.about__rectangle-vend {
+    position: absolute;
+    top: 58px;
+    left: 849px;
+    z-index: 3;
+}
+
+.about__cats {
+    position: absolute;
+    top: 113px;
+    left: 1227px;
+    z-index: 2;
+}
+
+.about__shadow {
+    position: absolute;
+    top: 695px;
+    left: 788px;
+    z-index: 1;
+}
+
+.about__coffee {
+    position: absolute;
+    top: 443px;
+    left: 0px;
+}
+
+.about__plus1 {
+    position: absolute;
+    top: 542px;
+    left: 181px;
+}
+
+.about__tea {
+    position: absolute;
+    top: 519px;
+    left: 269px;
+}
+
+.about__plus2 {
+    position: absolute;
+    top: 541px;
+    left: 477px;
+}
+
+.about__snack {
+    position: absolute;
+    top: 473px;
+    left: 551px;
+}
+
+.about__teatone {
+    display: none;
+}
+
+.about__income1, .about__income2, .about__income3 {
+    position: absolute;
+    font-family: var(--comfortaa);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about__percent100-1, .about__percent100-2, .about__percent300 {
+    position: absolute;
+    font-family: var(--comfortaa);
+    font-weight: 700;
+    font-size: 29px;
+    color: rgb(222, 89, 34);
+}
+
+.about__income1 {
+    top: 530px;
+    left: 32px;
+}
+
+.about__income2 {
+    top: 550px;
+    left: 297px;
+}
+
+.about__income3 {
+    top: 573px;
+    left: 582px;
+}
+
+.about__percent100-1 {
+    top: 559px;
+    left: 36px;
+}
+
+.about__percent100-2 {
+    top: 598px;
+    left: 590px;
+}
+
+.about__percent300 {
+    top: 575px;
+    left: 303px;
+}
+
+ .about__coffee-text, .about__tea-text, .about__snack-text {
+    position: absolute;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(238, 130, 11);
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+
+.about__coffee-text {
+    top: 671px;
+    left: 4px;
+}
+
+.about__tea-text {
+    top: 671px;
+    left: 194px;
+}
+
+.about__snack-text {
+    top: 671px;
+    left: 551px;
+}
+
+/* 3. Получи предложение */
+
+.offer {
+    min-height: 182px;
+    background-color: var(--dark-grey);
+}
+
+.offer__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.offer__text {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+    color: var(--light-orange);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.input__name, .input__email, .input__tel, .input__city {
+    border: 1px solid rgb(239, 232, 232);
+    border-radius: 30px;
+    background-color: var(--dark-grey);
+    padding: 15px 16px;
+}
+
+.input__name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.input__tel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.input__email {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.input__city {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.button__request {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    cursor: pointer;
+    background-color: var(--dark-orange);
+    border: none;
+    border-radius: 30px;
+    width: 294px;
+    height: 57px;
+    color: var(--bg);
+    font-weight: 400;
+    font-size: 26px;
+    padding: 15px 16px;
+    letter-spacing: 1.5px;
+}
+
+.offer__privacy {
+    color: var(--bg);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* 4. Как это работает */
+
+.video {
+    min-height: 868px;
+    background-color: var(--bg);
+}
+
+.how-work {
+    margin: 0;
+    text-align: center;
+    color: rgb(239, 131, 10);
+    font-size: 65px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-top: 89px;
+    padding-bottom: 120px;
+}
+
+.cat-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 126px;
+}
+
+.watch-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+    cursor: pointer;
+    background-color: var(--light-orange);
+    border: none;
+    border-radius: 50px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: var(--comfortaa);
+    padding: 38px 199px;
+    font-weight: 700;
+} 
+
+.watch-video__item {
+    font-size: 30px;
+}
+
+.watch-video__item:nth-child(2) {
+    font-size: 80px;
+}
+
+/* 5. Открой кофейню */
+
+.open-coffee {
+    min-height: 182px;
+    background-color: var(--light-grey);
+}
+
+.open-coffee__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.open-coffee__text {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+    color: var(--dark-orange);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.open-coffee__name, .open-coffee__email, .open-coffee__tel, .open-coffee__city {
+    border: 1px solid rgb(35, 35, 38);
+    border-radius: 30px;
+    background-color: var(--light-grey);
+    padding: 15px 16px;
+}
+
+.open-coffee__name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.open-coffee__tel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.open-coffee__email {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.open-coffee__city {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.offer__privacy2 {
+    color: rgb(35, 35, 38);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* 6. Coffee-tea point */
+
+.coffee-tea-point {
+    min-height: 868px;
+    background-color: var(--bg);
+}
+
+.coffee-tea-point__container {
+    max-width: 1492px;
+    position: relative;
+    margin: auto;
+}
+
+.rectangle-part1 {
+    position: absolute;
+    top: 126px;
+    left: 290px;
+    z-index: 1;
+}
+
+.rectangle-part2 {
+    position: absolute;
+    top: 148px;
+    left: 919px;
+    z-index: 1;
+
+}
+
+.plus-bl {
+    position: absolute;
+    top: 376px;
+    left: 712px;
+}
+
+.shadow1 {
+    position: absolute;
+    top: 691px;
+    left: 282px;
+    z-index: 0;
+}
+
+.shadow2 {
+    position: absolute;
+    top: 696px;
+    left: 855px;
+    z-index: 0;
+}
+
+.arrow-double1 {
+    position: absolute;
+    top: 137px;
+    left: 231px;
+}
+
+.arrow-double2 {
+    position: absolute;
+    top: 160px;
+    left: 1078px;
+}
+
+.arrow-horizon1 {
+    position: absolute;
+    top: 96px;
+    left: 313px;
+}
+
+.arrow-horizon2 {
+    position: absolute;
+    top: 100px;
+    left: 912px;
+}
+
+.line1 {
+    position: absolute;
+    top: 298px;
+    left: 37px;
+}
+
+.line2 {
+    position: absolute;
+    top: 426px;
+    left: 29px;
+    z-index: 2;
+}
+
+.line3 {
+    position: absolute;
+    top: 340px;
+    left: 984px;
+}
+
+.teatone {
+    position: absolute;
+    top: 594px;
+    left: 15px;
+}
+
+.coffee-tea__text, .lv307, .tea__text, .cm210, .cm140, .snack__text, .positions12, .cm20 , .cm210-2 {
+    position: absolute;
+    font-family: var(--comfortaa);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--black);
+}
+
+.coffee-tea__text {
+    top: 94px;
+    left: 14px;
+}
+
+.lv307 {
+    top: 253px;
+    left: 75px;
+    font-size: 25px;
+}
+
+.tea__text {
+    top: 483px;
+    left: 77px;
+    font-size: 26px;
+}
+
+.cm210 {
+    top: 406px;
+    left: 173px;
+    font-size: 28px;
+    transform: rotate(-90deg);
+}
+
+.cm140 {
+    top: 66px;
+    left: 406px;
+    font-size: 28px;
+}
+
+.snack__text {
+    top: 104px;
+    left: 1081px;
+}
+
+.positions12 {
+    top: 271px;
+    left: 1120px;
+    font-size: 38px;
+}
+
+.cm20 {
+    top: 67px;
+    left: 904px;
+    font-size: 28px;
+}
+
+.cm210-2 {
+    top: 415px;
+    left: 1081px;
+    font-size: 28px;
+    transform: rotate(-90deg);
+}
+
+.price80, .price420  {
+    position: absolute;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(238, 130, 11);
+    font-family: var(--comfortaa);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    padding: 10px 15px;
+}
+
+.price80 {
+    top: 757px;
+    left: 830px;
+}
+
+.price420 {
+    top: 757px;
+    left: 333px;
+} 
+
+.cats-ctp {
+    display: none;   
+}
+
+.how-much {
+    position: absolute;
+    top: 687px;
+    left: 1123px;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: rgb(239, 131, 10);
+}
+
+/* 7. Стань частью OMIMI */
+
+.join-omimi {
+    min-height: 182px;
+    background-color: var(--dark-grey);
+}
+
+.join-omimi__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.join-omimi__text {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+    color: var(--light-orange);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.join-omimi__name, .join-omimi__email, .join-omimi__tel, .join-omimi__city {
+    border: 1px solid rgb(239, 232, 232);
+    border-radius: 30px;
+    background-color: var(--dark-grey);
+    padding: 15px 16px;
+}
+
+.join-omimi__name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.join-omimi__tel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.join-omimi__email {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.join-omimi__city {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.button__request {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    cursor: pointer;
+    background-color: var(--dark-orange);
+    border: none;
+    border-radius: 30px;
+    width: 294px;
+    height: 57px;
+    color: var(--bg);
+    font-weight: 400;
+    font-size: 26px;
+    padding: 15px 16px;
+    letter-spacing: 1.5px;
+}
+
+.offer__privacy3 {
+    color: var(--bg);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* 8. Какой заработок */
+
+.profit {
+    min-height: 868px;
+    background-color: var(--bg);
+}
+
+.profit__container {
+    max-width: 1492px;
+    position: relative;
+    margin: auto;
+}
+
+.profit__text {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    color: rgb(239, 131, 10);
+    font-size: 65px;
+    width: 145px;
+    text-transform: uppercase;
+    text-align: center;
+    top: 71px;
+    left: 62px;
+}
+
+.profit__cat {
+    position: absolute;
+    top: 268px;
+    left: 51px;
+}
+
+.profit__money {
+    position: absolute;
+    top: 477px;
+    left: 391px;
+}
+
+.profit__coffe {
+    position: absolute;
+    top: 56px;
+    left: 1241px;
+}
+
+.profit__tea {
+    position: absolute;
+    top: 339px;
+    left: 1227px;
+}
+
+.profit__snack {
+    position: absolute;
+    top: 567px;
+    left: 1228px;
+}
+
+.profit__coffe-text, .profit__tea-text, .profit__snack-text {
+    position: absolute;
+    color: rgb(222, 89, 34);
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.profit__coffe-text {
+    top: 50px;
+    left: 707px;
+}
+
+.profit__tea-text {
+    top: 300px;
+    left: 708px;
+}
+
+.profit__snack-text {
+    top: 572px;
+    left: 712px;
+}
+
+.profit__line1 {
+    position: absolute;
+    top: 240px;
+    left: 702px;
+}
+
+.profit__line2 {
+    position: absolute;
+    top: 482px;
+    left: 705px;
+}
+
+.profit__line3 {
+    position: absolute;
+    top: 765px;
+    left: 705px;
+}
+
+.profit__invested1, .profit__invested2, .profit__invested3 {
+    position: absolute;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: var(--comfortaa);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+.profit__invested1 {
+    top: 105px;
+    left: 708px;
+}
+.profit__invested2 {
+    top: 352px;
+    left: 708px;
+}
+.profit__invested3 {
+    top: 627px;
+    left: 708px;
+}
+
+.profit__sold1, .profit__sold2, .profit__sold3 {
+    position: absolute;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: var(--comfortaa);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+.profit__sold1 {
+    top: 105px;
+    left: 985px;
+}
+.profit__sold2 {
+    top: 352px;
+    left: 980px;
+}
+.profit__sold3 {
+    top: 627px;
+    left: 987px;
+}
+
+.profit__price50, .profit__price15, .profit__price40, .profit__price100-p, .profit__price60-p, .profit__price80-p {
+    position: absolute;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: var(--comfortaa);
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.profit__price50 {
+    top: 154px;
+    left: 709px;
+}
+
+.profit__price15 {
+    top: 398px;
+    left: 709px;
+}
+
+.profit__price40 {
+    top: 673px;
+    left: 715px;
+}
+
+.profit__price100-p {
+    top: 154px;
+    left: 984px;
+}
+
+.profit__price60-p {
+    top: 398px;
+    left: 980px;
+}
+
+.profit__price80-p {
+    top: 673px;
+    left: 985px;
+}
+
+.profit__arrow1, .profit__arrow2, .profit__arrow3 {
+    position: absolute;
+}
+
+.profit__arrow1 {
+    top: 163px;
+    left: 867px;
+}
+
+.profit__arrow2 {
+    top: 414px;
+    left: 869px;
+}
+
+.profit__arrow3 {
+    top: 691px;
+    left: 881px;
+}
+
+.profit__income1, .profit__income2, .profit__income3 {
+    position: absolute;
+    font-family: var(--comfortaa);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profit__income1 {
+    top: 145px;
+    left: 1267px;
+}
+
+.profit__income2 {
+    top: 383px;
+    left: 1261px;
+}
+
+.profit__income3 {
+    top: 685px;
+    left: 1268px;
+}
+
+.profit__percent100-1, .profit__percent100-2, .profit__percent300 {
+    position: absolute;
+    font-family: var(--comfortaa);
+    font-weight: 700;
+    font-size: 29px;
+    color: rgb(222, 89, 34);
+}
+
+.profit__percent100-1 {
+    top: 180px;
+    left: 1280px;
+}
+
+.profit__percent100-2 {
+    top: 720px;
+    left: 1276px;
+}
+
+.profit__percent300 {
+    top: 416px;
+    left: 1275px;
+}
+
+/* 9. Открой франшизу */
+
+.franchise {
+    min-height: 182px;
+    background-color: var(--light-grey);
+}
+
+.franchise__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.franchise__text {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+    color: var(--dark-orange);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.franchise__name, .franchise__email, .franchise__tel, .franchise__city {
+    border: 1px solid rgb(35, 35, 38);
+    border-radius: 30px;
+    background-color: var(--light-grey);
+    padding: 15px 16px;
+}
+
+.franchise__name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+/* 10. Почему OMIMI? */
+
+.why-omimi {
+    min-height: 868px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-omimi-img {
+    padding-top: 46px;
+    padding-bottom: 74px;
+}
+
+.reasons-container {
+    display: flex;
+}
+
+.reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.reasons__item {
+    color: var(--black);
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 16px;
+}
+
+.why-omimi__h4 {
+    margin: 0;
+    color: var(--black);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+/* 11. Заработай с OMIMI */
+
+.make-money {
+    min-height: 182px;
+    background-color: var(--dark-grey);
+}
+
+.make-money__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.make-money__text {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+    color: var(--light-orange);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.make-money__name, .make-money__email, .make-money__tel, .make-money__city {
+    border: 1px solid rgb(239, 232, 232);
+    border-radius: 30px;
+    background-color: var(--dark-grey);
+    padding: 15px 16px;
+}
+
+.make-money__name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.make-money__tel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.make-money__email {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.make-money__city {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+/* 12. Как стать партнером */
+
+.become-partner {
+    min-height: 868px;
+    background-color: var(--bg);
+}
+
+.become-partner__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 71px;
+}
+
+.become-partner__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+}
+
+.partner__text {
+    margin: 0;
+    text-align: center;
+    color: var(--black);
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.for-partner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--black);
+    font-size: 36px;
+    max-width: 530px;
+}
+
+.business-plan {
+    cursor: pointer;
+    background-color: var(--dark-orange);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 23px;
+    color: var(--bg);
+    font-size: 26px;
+}
+
+.contract {
+    cursor: pointer;
+    background-color: rgb(238, 130, 11);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 54px;
+    color: var(--bg);
+    font-size: 26px;
+}
+
+.paws-hand {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+/* 13. Футер */
+
+.footer {
+    min-height: 389px;
+    background-color: var(--dark-grey);
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    gap: 127px;
+    padding-top: 48px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo-footer {
+    padding-right: 64px;
+}
+
+.whatsapp {
+    padding-right: 13px;
+}
+
+.footer__text {
+    color: var(--bg);
+    font-size: 22px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link__item {
+    color: var(--bg);
+    font-size: 25px;
+}
+
+.link__item:nth-child(1) {
+    color: rgb(239, 89, 36);
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    /* 1. Шапка */
+
+    .header__number {
+        gap: 22px;
+        align-items: center;
+    }
+
+    .header__num {
+        font-size: 18px;
+    }
+
+    .header__button-menu {
+        align-items: center;
+        gap: 13px;
+    }
+
+    .header__button {
+        padding: 10px 11px;
+        font-size: 13px;
+    }
+
+    .header__menu {
+        gap: 4px;
+    }
+
+    .menu__item {
+        width: 10px;
+        height: 2.5px;
+    }
+
+    .menu__item:nth-child(1) {
+        width: 28px;
+    }
+
+    /* 2. Стань владельцем кофейни */
+
+    .about {
+        min-height: 468px;
+    }
+
+    .about__container {
+        width: 768px;
+    }
+
+    .about__title {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding-top: 20px;
+    }
+
+    .about__omimi {
+        width: 381px;
+        height: 131px;
+        top: 59px;
+        left: 0px;
+    }
+
+    .about__rectangle-vend {
+        width: 228px;
+        height: 336px;
+        top: 38px;
+        left: 447px;
+    }
+
+    .about__cats {
+        width: 85px;
+        height: 286px;
+        top: 57px;
+        left: 650px;
+    }
+
+    .about__shadow {
+        width: 274px;
+        height: 27px;
+        top: 362px;
+        left: 422px;
+    }
+
+    .about__coffee {
+        width: 73px;
+        height: 191px;
+        top: 188px;
+        left: 0px;
+    }
+
+    .about__plus1 {
+        width: 17px;
+        height: 17px;
+        top: 281px;
+        left: 105px;
+    }
+
+    .about__tea {
+        width: 84px;
+        height: 60px;
+        top: 271px;
+        left: 156px;
+    }
+
+    .about__plus2 {
+        width: 17px;
+        height: 17px;
+        top: 281px;
+        left: 266px;
+    }
+
+    .about__snack {
+        width: 68px;
+        height: 85px;
+        top: 249px;
+        left: 316px;
+    }
+
+    .about__teatone {
+        display: none;
+    }
+
+    .about__income1, .about__income2, .about__income3 {
+        font-size: 10px;
+    }
+
+    .about__percent100-1, .about__percent100-2, .about__percent300 {
+        font-size: 17px;
+    }
+
+    .about__income1 {
+        top: 279px;
+        left: 15px;
+    }
+
+    .about__income2 {
+        top: 287px;
+        left: 170px;
+    }
+
+    .about__income3 {
+        top: 295px;
+        left: 331px;
+    }
+
+    .about__percent100-1 {
+        top: 293px;
+        left: 14px;
+    }
+
+    .about__percent100-2 {
+        top: 309px;
+        left: 331px;
+    }
+
+    .about__percent300 {
+        top: 297px;
+        left: 168px;
+    }
+
+    .about__coffee-text, .about__tea-text, .about__snack-text {
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+
+    .about__coffee-text {
+        top: 352px;
+        left: -3px;
+    }
+
+    .about__tea-text {
+        top: 352px;
+        left: 106px;
+    }
+
+    .about__snack-text {
+        top: 352px;
+        left: 307px;
+    }
+
+    /* 3. Получи предложение */
+
+    .offer {
+        min-height: 162px;
+    }
+    
+    .offer__input {
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+    
+    .offer__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .input__name, .input__email, .input__tel, .input__city {
+        border-radius: 30px;
+        width: 150px;
+        height: 6px;
+    }
+
+    .input__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .input__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .input__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .input__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 183px;
+        height: 37px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 0;
+    }
+    
+    .offer__privacy {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    /* 4. Как это работает */
+
+    .video {
+        min-height: 468px;
+    }
+
+    .how-work {
+        font-size: 45px;
+        padding-top: 39px;
+        padding-bottom: 60px;
+    }
+
+    .cat-work {
+        width: 234px;
+        height: 243px;
+    }
+
+    .cat-button {
+        gap: 60px;
+    }
+
+    .watch-video {
+        gap: 21px;
+        border-radius: 50px;
+        padding: 28px 119px;
+    } 
+
+    .watch-video__item {
+        font-size: 15px;
+    }
+
+    .watch-video__item:nth-child(2) {
+        font-size: 40px;
+    }
+
+    /* 5. Открой кофейню */
+
+    .open-coffee {
+        min-height: 162px;
+    }
+    
+    .open-coffee__input {
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+    
+    .open-coffee__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .open-coffee__name, .open-coffee__email, .open-coffee__tel, .open-coffee__city {
+        border-radius: 30px;
+        width: 150px;
+        height: 6px;
+    }
+
+    .open-coffee__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .open-coffee__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .open-coffee__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .open-coffee__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 183px;
+        height: 37px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 0;
+    }
+    
+    .offer__privacy2 {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    /* 6. Coffee-tea point */
+
+    .coffee-tea-point {
+        min-height: 468px;
+    }
+
+    .coffee-tea-point__container {
+        max-width: 768px;
+    }
+
+    .rectangle-part1 {
+        width: 175px;
+        height: 297px;
+        top: 72px;
+        left: 131px;
+    }
+
+    .rectangle-part2 {
+        width: 28px;
+        height: 280px;
+        top: 80px;
+        left: 493px;
+    }
+
+    .plus-bl {
+        width: 53px;
+        height: 53px;
+        top: 181px;
+        left: 368px;
+    }
+
+    .shadow1 {
+        width: 182px;
+        height: 18px;
+        top: 352px;
+        left: 125px;
+    }
+
+    .shadow2 {
+        width: 94px;
+        height: 9px;
+        top: 357px;
+        left: 460px;
+    }
+
+    .arrow-double1 {
+        width: 11px;
+        height: 268px;
+        top: 80px;
+        left: 102px;
+    }
+
+    .arrow-double2 {
+        width: 11px;
+        height: 268px;
+        top: 79px;
+        left: 563px;
+    }
+
+    .arrow-horizon1 {
+        width: 148px;
+        height: 11px;
+        top: 49px;
+        left: 143px;
+    }
+
+    .arrow-horizon2 {
+        width: 35px;
+        height: 11px;
+        top: 49px;
+        left: 489px;
+    }
+
+    .line1 {
+        width: 138px;
+        height: 28px;
+        top: 162px;
+        left: 7px;
+    }
+
+    .line2 {
+        width: 197px;
+        height: 102px;
+        top: 190px;
+        left: 4px;
+    }
+
+    .line3 {
+        width: 227px;
+        height: 28px;
+        top: 169px;
+        left: 517px;
+    }
+
+    .teatone {
+        width: 99px;
+        height: 26px;
+        top: 304px;
+        left: 0px;
+    }
+
+    .coffee-tea__text, .lv307, .tea__text, .cm210, .cm140, .snack__text, .positions12, .cm20 , .cm210-2 {
+        font-size: 10px;
+        letter-spacing: normal;
+    }
+
+    .coffee-tea__text {
+        top: 49px;
+        left: 0px;
+    }
+
+    .lv307 {
+        top: 133px;
+        left: 30px;
+        font-size: 15px;
+    }
+
+    .tea__text {
+        top: 232px;
+        left: 33px;
+        font-size: 16px;
+    }
+
+    .cm210 {
+        top: 191px;
+        left: 66px;
+        font-size: 14px;
+    }
+
+    .cm140 {
+        top: 31px;
+        left: 189px;
+        font-size: 14px;
+    }
+
+    .snack__text {
+        top: 49px;
+        left: 587px;
+    }
+
+    .positions12 {
+        top: 139px;
+        left: 586px;
+        font-size: 18px;
+    }
+
+    .cm20 {
+        top: 28px;
+        left: 482px;
+        font-size: 14px;
+    }
+
+    .cm210-2 {
+        top: 202px;
+        left: 560px;
+        font-size: 14px;
+    }
+
+    .price80, .price420  {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+
+    .price80 {
+        top: 387px;
+        left: 454px;
+    }
+
+    .price420 {
+        top: 387px;
+        left: 154px;
+    } 
+
+    .cats-ctp {
+        display: none;   
+    }
+
+    .how-much {
+        top: 368px;
+        left: 580px;
+        font-size: 30px;
+        width: 138px;
+    }
+
+    /* 7. Стань частью OMIMI */
+
+    .join-omimi {
+        min-height: 162px;
+    }
+    
+    .join-omimi__input {
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+    
+    .join-omimi__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .join-omimi__name, .join-omimi__email, .join-omimi__tel, .join-omimi__city {
+        border-radius: 30px;
+        width: 150px;
+        height: 6px;
+    }
+
+    .join-omimi__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .join-omimi__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .join-omimi__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .join-omimi__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 183px;
+        height: 37px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 0;
+    }
+    
+    .offer__privacy3 {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    /* 8. Какой заработок */
+
+    .profit {
+        min-height: 468px;
+    }
+
+    .profit__container {
+        max-width: 768px;
+    }
+
+    .profit__text {
+        font-size: 35px;
+        width: 145px;
+        top: 9px;
+        left: 46px;
+    }
+
+    .profit__cat {
+        width: 190px;
+        height: 149px;
+        top: 106px;
+        left: 15px;
+    }
+
+    .profit__money {
+        width: 97px;
+        height: 122px;
+        top: 243px;
+        left: 241px;
+    }
+
+    .profit__coffe {
+        width: 77px;
+        height: 102px;
+        top: 24px;
+        left: 633px;
+    }
+
+    .profit__tea {
+        width: 98px;
+        height: 77px;
+        top: 166px;
+        left: 626px;
+    }
+
+    .profit__snack {
+        width: 83px;
+        height: 104px;
+        top: 290px;
+        left: 626px;
+    }
+
+    .profit__coffe-text, .profit__tea-text, .profit__snack-text {
+        font-size: 20px;
+    }
+
+    .profit__coffe-text {
+        top: 13px;
+        left: 393px;
+    }
+
+    .profit__tea-text {
+        top: 140px;
+        left: 393px;
+    }
+
+    .profit__snack-text {
+        top: 288px;
+        left: 393px;
+    }
+
+    .profit__line1 {
+        width: 285px;
+        height: 4px;
+        top: 116px;
+        left: 379px;
+    }
+
+    .profit__line2 {
+        width: 266px;
+        height: 4px;
+        top: 237px;
+        left: 380px;
+    }
+
+    .profit__line3 {
+        width: 271px;
+        height: 4px;
+        top: 388px;
+        left: 380px;
+    }
+
+    .profit__invested1, .profit__invested2, .profit__invested3 {
+        font-size: 12px;
+    }
+    .profit__invested1 {
+        top: 45px;
+        left: 393px;
+    }
+    .profit__invested2 {
+        top: 173px;
+        left: 393px;
+    }
+    .profit__invested3 {
+        top: 320px;
+        left: 393px;
+    }
+
+    .profit__sold1, .profit__sold2, .profit__sold3 {
+        font-size: 12px;
+    }
+    .profit__sold1 {
+        top: 45px;
+        left: 535px;
+    }
+    .profit__sold2 {
+        top: 173px;
+        left: 535px;
+    }
+    .profit__sold3 {
+        top: 320px;
+        left: 535px;
+    }
+
+    .profit__price50, .profit__price15, .profit__price40, .profit__price100-p, .profit__price60-p, .profit__price80-p {
+        font-size: 35px;
+    }
+
+    .profit__price50 {
+        top: 70px;
+        left: 393px;
+    }
+
+    .profit__price15 {
+        top: 193px;
+        left: 393px;
+    }
+
+    .profit__price40 {
+        top: 341px;
+        left: 393px;
+    }
+
+    .profit__price100-p {
+        top: 70px;
+        left: 535px;
+    }
+
+    .profit__price60-p {
+        top: 193px;
+        left: 535px;
+    }
+
+    .profit__price80-p {
+        top: 341px;
+        left: 535px;
+    }
+
+    .profit__arrow1 {
+        width: 37px;
+        height: 13px;
+        top: 80px;
+        left: 487px;
+    }
+
+    .profit__arrow2 {
+        width: 37px;
+        height: 13px;
+        top: 203px;
+        left: 487px;
+    }
+
+    .profit__arrow3 {
+        width: 37px;
+        height: 13px;
+        top: 353px;
+        left: 487px;
+    }
+
+    .profit__income1, .profit__income2, .profit__income3 {
+        font-size: 12px;
+    }
+
+    .profit__income1 {
+        top: 70px;
+        left: 646px;
+    }
+
+    .profit__income2 {
+        top: 186px;
+        left: 643px;
+    }
+
+    .profit__income3 {
+        top: 347px;
+        left: 645px;
+    }
+
+    .profit__percent100-1, .profit__percent100-2, .profit__percent300 {
+        font-size: 17px;
+    }
+
+    .profit__percent100-1 {
+        top: 83px;
+        left: 649px;
+    }
+
+    .profit__percent100-2 {
+        top: 363px;
+        left: 649px;
+    }
+
+    .profit__percent300 {
+        top: 199px;
+        left: 646px;
+    }
+
+    /* 9. Открой франшизу */
+
+    .franchise {
+        min-height: 162px;
+    }
+    
+    .franchise__input {
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+    
+    .franchise__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .franchise__name, .franchise__email, .franchise__tel, .franchise__city {
+        border-radius: 30px;
+        width: 150px;
+        height: 6px;
+    }
+
+    .franchise__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .franchise__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .franchise__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .franchise__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 183px;
+        height: 37px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 0;
+    }
+    
+    .offer__privacy2 {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    /* 10. Почему OMIMI? */
+
+    .why-omimi {
+        min-height: 468px;
+    }
+
+    .why-omimi-img {
+        width: 681px;
+        height: 47px;
+        padding-top: 20px;
+        padding-bottom: 34px;
+    }
+
+    .reasons {
+        gap: 15px;
+    }
+
+    .reasons__item {
+        font-size: 20px;
+        gap: 16px;
+    }
+
+    .cat-with-balloon {
+        width: 225px;
+        height: 275px;
+    }
+
+    .star {
+        width: 18px;
+        height: 17px;
+    }
+
+    .why-omimi__h4 {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    /* 11. Заработай с OMIMI */
+
+    .make-money {
+        min-height: 162px;
+    }
+    
+    .make-money__input {
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+    
+    .make-money__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .make-money__name, .make-money__email, .make-money__tel, .make-money__city {
+        border-radius: 30px;
+        width: 150px;
+        height: 6px;
+    }
+
+    .make-money__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .make-money__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .make-money__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .make-money__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 183px;
+        height: 37px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 0;
+    }
+    
+    .offer__privacy {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    /* 12. Как стать партнером */
+
+    .become-partner {
+        min-height: 468px;
+    }
+
+    .become-partner__container {
+        padding-top: 31px;
+    }
+
+    .paws-left {
+        width: 113px;
+        height: 231px;
+    }
+
+    .paws-right {
+        width: 110px;
+        height: 226px;
+    }
+
+    .mini-logo {
+        width: 10px;
+        height: 16px;
+    }
+
+    .paws-hand-img {
+        width: 193px;
+        height: 144px;
+    }
+
+    .become-partner__text {
+        gap: 23px;
+    }
+
+    .partner__text {
+        font-size: 20px;
+    }
+
+    .for-partner {
+        gap: 10px;
+        font-size: 26px;
+    }
+
+    .business-plan {
+        padding: 5px 13px;
+        font-size: 16px;
+    }
+
+    .contract {
+        padding: 5px 34px;
+        font-size: 16px;
+    }
+
+    .paws-hand {
+        gap: 50px;
+        padding-top: 20px;
+    }
+
+    /* 13. Футер */
+
+    .footer {
+        min-height: 289px;
+    }
+
+    .footer__container {
+        gap: 127px;
+        padding-top: 28px;
+    }
+
+    .footer__contacts {
+        gap: 30px;
+    }
+
+    .logo-footer {
+        padding-right: 64px;
+    }
+
+    .whatsapp {
+        padding-right: 13px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+    }
+
+    .footer__links {
+        gap: 10px;
+    }
+
+    .link__item {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* 1. Шапка */
+
+    .header {
+        min-height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header__circles {
+        width: 34px;
+        height: 9px;
+    }
+
+    .header__number {
+        gap: 10px;
+    }
+
+    .header__num {
+        font-size: 9px;
+    }
+    
+    .header__logo {
+        width: 78px;
+        height: 30px;
+    }
+
+    .header__button {
+        padding: 7px 15px;
+        font-size: 8px;
+        letter-spacing: normal;
+    }
+
+    .header__menu {
+       display: none;
+    }
+
+    /* 2. Стань владельцем кофейни */
+
+    .about {
+        min-height: 248px;
+    }
+
+    .about__container {
+        width: 320px;
+    }
+
+    .about__title {
+        font-size: 15px;
+        letter-spacing: normal;
+        padding-top: 16px;
+    }
+
+    .about__omimi {
+        width: 146px;
+        height: 49px;
+        top: 14px;
+        left: 0px;
+    }
+
+    .about__rectangle-vend {
+        width: 122px;
+        height: 188px;
+        top: 12px;
+        left: 157px;
+    }
+
+    .about__cats {
+        width: 40px;
+        height: 135px;
+        top: 36px;
+        left: 267px;    
+    }
+
+    .about__shadow {
+        width: 154px;
+        height: 21px;
+        top: 187px;
+        left: 140px;
+    }
+
+    .about__coffee {
+        width: 42px;
+        height: 55px;
+        top: 75px;
+        left: 2px;
+    }
+
+    .about__plus1 {
+        width: 20px;
+        height: 21px;
+        top: 98px;
+        left: 60px;
+    }
+
+    .about__tea {
+        width: 51px;
+        height: 37px;
+        top: 92px;
+        left: 101px;
+    }
+
+    .about__plus2 {
+        display: none;
+    }
+
+    .about__snack {
+        width: 39px;
+        height: 49px;
+        top: 143px;
+        left: 50px;
+    }
+
+    .about__income1, .about__income2, .about__income3 {
+        font-size: 6px;
+    }
+
+    .about__percent100-1, .about__percent100-2, .about__percent300 {
+        font-size: 9px;
+    }
+
+    .about__income1 {
+        top: 101px;
+        left: 10px;
+    }
+
+    .about__income2 {
+        top: 100px;
+        left: 109px;
+    }
+
+    .about__income3 {
+        top: 171px;
+        left: 59px;
+    }
+
+    .about__percent100-1 {
+        top: 109px;
+        left: 11px;
+    }
+
+    .about__percent100-2 {
+        top: 179px;
+        left: 61px;
+    }
+
+    .about__percent300 {
+        top: 109px;
+        left: 109px;
+    }
+
+    .about__coffee-text, .about__tea-text, .about__snack-text {
+        background-color: var(--bg);
+        letter-spacing: normal;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .about__coffee-text {
+        top: 139px;
+        left: 5px;
+    }
+
+    .about__tea-text {
+        top: 139px;
+        left: 93px;
+        font-size: 10px;
+        width: 52px;
+        text-align: center;
+    }
+
+    .about__snack-text {
+        top: 193px;
+        left: 47px;
+    }
+
+    .about__teatone {
+        display: block;
+        position: absolute;
+        width: 52px;
+        height: 14px;
+        top: 72px;
+        left: 95px;
+    }
+
+    /* 3. Получи предложение */
+
+    .offer {
+        min-height: 127px;
+    }
+    
+    .offer__input {
+        padding-top: 7px;
+        grid-row-gap: 14px;
+    }
+    
+    .offer__text {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    
+    .input__name, .input__email, .input__tel, .input__city {
+        border-radius: 30px;
+        padding: 0;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .input__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .input__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .input__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .input__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        letter-spacing: normal;
+        padding: 0;
+    }
+    
+    .offer__privacy {
+        padding-top: 10px;
+        font-size: 5px;
+        letter-spacing: normal;
+    }
+
+    /* 4. Как это работает */
+
+    .video {
+        min-height: 248px;
+    }
+
+    .how-work {
+        font-size: 25px;
+        padding-top: 26px;
+        padding-bottom: 18px;
+    }
+
+    .cat-work {
+        width: 121px;
+        height: 124px;
+    }
+
+    .watch-video__arrow {
+        width: 8px;
+        height: 26px;
+    }
+
+    .cat-button {
+        gap: 15px;
+    }
+
+    .watch-video {
+        gap: 15px;
+        border-radius: 20px;
+        padding: 12px 15px;
+    } 
+
+    .watch-video__item {
+        font-size: 10px;
+    }
+
+    .watch-video__item:nth-child(2) {
+        font-size: 30px;
+    }
+
+    /* 5. Открой кофейню */
+
+    .open-coffee {
+        min-height: 127px;
+    }
+    
+    .open-coffee__input {
+        padding-top: 7px;
+        grid-row-gap: 14px;
+    }
+    
+    .open-coffee__text {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    
+    .open-coffee__name, .open-coffee__email, .open-coffee__tel, .open-coffee__city {
+        border-radius: 30px;
+        padding: 0;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .open-coffee__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .open-coffee__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .open-coffee__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .open-coffee__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .open-coffee__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        letter-spacing: normal;
+        padding: 0;
+    }
+    
+    .offer__privacy2 {
+        padding-top: 10px;
+        font-size: 5px;
+        letter-spacing: normal;
+    }
+
+    /* 6. Coffee-tea point */
+
+    .coffee-tea-point {
+        min-height: 248px;
+    }
+
+    .coffee-tea-point__container {
+        max-width: 320px;
+    }
+
+    .rectangle-part1 {
+        width: 102px;
+        height: 172px;
+        top: 31px;
+        left: 57px;
+    }
+
+    .rectangle-part2 {
+        width: 17px;
+        height: 165px;
+        top: 35px;
+        left: 180px;
+    }
+
+    .plus-bl {
+        width: 15px;
+        height: 15px;
+        top: 109px;
+        left: 160px;
+    }
+
+    .shadow1 {
+        width: 106px;
+        height: 10px;
+        top: 193px;
+        left: 54px;
+    }
+
+    .shadow2 {
+        width: 44px;
+        height: 5px;
+        top: 198px;
+        left: 166px;
+    }
+
+    .arrow-double1 {
+        width: 7px;
+        height: 175px;
+        top: 31px;
+        left: 46px;
+    }
+
+    .arrow-double2 {
+        width: 7px;
+        height: 175px;
+        top: 31px;
+        left: 211px;
+    }
+
+    .arrow-horizon1 {
+        width: 88px;
+        height: 6px;
+        top: 27px;
+        left: 64px;
+    }
+
+    .arrow-horizon2 {
+        width: 19px;
+        height: 6px;
+        top: 26px;
+        left: 178px;
+    }
+
+    .line1 {
+        width: 73px;
+        height: 13px;
+        top: 73px;
+        left: -1px;
+    }
+
+    .line2 {
+        width: 104px;
+        height: 23px;
+        top: 120px;
+        left: 0px;
+    }
+
+    .line3 {
+        width: 104px;
+        height: 12px;
+        top: 74px;
+        left: 191px;
+    }
+
+    .teatone {
+        width: 56px;
+        height: 15px;
+        top: 157px;
+        left: -7px;
+    }
+
+    .coffee-tea__text, .lv307, .tea__text, .cm210, .cm140, .snack__text, .positions12, .cm20 , .cm210-2 {
+        font-size: 9px;
+        letter-spacing: normal;
+    }
+
+    .coffee-tea__text {
+        width: 62px;
+        top: 14px;
+        left: -3px;
+    }
+
+    .lv307 {
+        top: 56px;
+        left: 3px;
+        font-size: 10px;
+    }
+
+    .tea__text {
+        top: 128px;
+        left: 8px;
+        font-size: 10px;
+    }
+
+    .cm210 {
+        top: 95px;
+        left: 23px;
+        font-size: 10px;
+    }
+
+    .cm140 {
+        top: 14px;
+        left: 89px;
+        font-size: 10px;
+    }
+
+    .snack__text {
+        width: 60px;
+        text-align: center;
+        top: 16px;
+        left: 233px;
+    }
+
+    .positions12 {
+        top: 57px;
+        left: 226px;
+        font-size: 10px;
+    }
+
+    .cm20 {
+        top: 14px;
+        left: 174px;
+        font-size: 10px;
+    }
+
+    .cm210-2 {
+        top: 100px;
+        left: 211px;
+        font-size: 10px;
+    }
+
+    .price80, .price420  {
+        font-size: 15px;
+        padding: 2px 8px;
+    }
+
+    .price80 {
+        top: 215px;
+        left: 198px;
+    }
+
+    .price420 {
+        top: 215px;
+        left: 6px;
+    } 
+
+    .cats-ctp {
+        display: block;
+        position: absolute;
+        top: 149px;
+        left: 229px;
+    }
+
+    .how-much {
+        display: none;
+    }
+
+    /* 7. Стань частью OMIMI */
+
+    .join-omimi {
+        min-height: 127px;
+    }
+    
+    .join-omimi__input {
+        padding-top: 7px;
+        grid-row-gap: 14px;
+    }
+    
+    .join-omimi__text {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    
+    .join-omimi__name, .join-omimi__email, .join-omimi__tel, .join-omimi__city {
+        border-radius: 30px;
+        padding: 0;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .join-omimi__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .join-omimi__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .join-omimi__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .join-omimi__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        letter-spacing: normal;
+        padding: 0;
+    }
+    
+    .offer__privacy3 {
+        padding-top: 10px;
+        font-size: 5px;
+        letter-spacing: normal;
+    }
+
+    /* 8. Какой заработок */
+
+    .profit {
+        min-height: 250px;
+    }
+
+    .profit__container {
+        max-width: 317px;
+    }
+
+    .profit__text {
+        font-size: 18px;
+        width: 118px;
+        top: 14px;
+        left: -7px;
+    }
+
+    .profit__cat {
+        width: 101px;
+        height: 79px;
+        top: 69px;
+        left: 4px;    
+    }
+
+    .profit__money {
+        width: 52px;
+        height: 67px;
+        top: 163px;
+        left: 42px;
+    }
+
+    .profit__coffe {
+        width: 45px;
+        height: 60px;
+        top: 23px;
+        left: 247px;
+    }
+
+    .profit__tea {
+        width: 61px;
+        height: 48px;
+        top: 109px;
+        left: 242px;
+    }
+
+    .profit__snack {
+        width: 51px;
+        height: 63px;
+        top: 179px;
+        left: 245px;
+    }
+
+    .profit__coffe-text, .profit__tea-text, .profit__snack-text {
+        font-size: 15px;
+    }
+
+    .profit__coffe-text {
+        top: 14px;
+        left: 128px;
+    }
+
+    .profit__tea-text {
+        top: 94px;
+        left: 128px;
+    }
+
+    .profit__snack-text {
+        top: 169px;
+        left: 128px;
+    }
+
+    .profit__line1 {
+        width: 135px;
+        height: 2px;
+        top: 72px;
+        left: 125px;
+    }
+
+    .profit__line2 {
+        width: 123px;
+        height: 2px;
+        top: 153px;
+        left: 125px;
+    }
+
+    .profit__line3 {
+        width: 129px;
+        height: 2px;
+        top: 228px;
+        left: 125px;
+    }
+
+    .profit__invested1, .profit__invested2, .profit__invested3 {
+        font-size: 8px;
+    }
+    .profit__invested1 {
+        top: 35px;
+        left: 128px;
+    }
+    .profit__invested2 {
+        top: 115px;
+        left: 128px;
+    }
+    .profit__invested3 {
+        top: 190px;
+        left: 128px;
+    }
+
+    .profit__sold1, .profit__sold2, .profit__sold3 {
+        font-size: 8px;
+    }
+    .profit__sold1 {
+        top: 35px;
+        left: 188px;
+    }
+    .profit__sold2 {
+        top: 115px;
+        left: 188px;
+    }
+    .profit__sold3 {
+        top: 190px;
+        left: 188px;
+    }
+
+    .profit__price50, .profit__price15, .profit__price40, .profit__price100-p, .profit__price60-p, .profit__price80-p {
+        font-size: 18px;
+    }
+
+    .profit__price50 {
+        top: 47px;
+        left: 128px;
+    }
+
+    .profit__price15 {
+        top: 126px;
+        left: 128px;
+    }
+
+    .profit__price40 {
+        top: 199px;
+        left: 128px;
+    }
+
+    .profit__price100-p {
+        top: 47px;
+        left: 188px;
+    }
+
+    .profit__price60-p {
+        top: 126px;
+        left: 188px;
+    }
+
+    .profit__price80-p {
+        top: 199px;
+        left: 188px;
+    }
+
+    .profit__arrow1 {
+        width: 18px;
+        height: 7px;
+        top: 53px;
+        left: 169px;
+    }
+
+    .profit__arrow2 {
+        width: 18px;
+        height: 7px;
+        top: 132px;
+        left: 169px;
+    }
+
+    .profit__arrow3 {
+        width: 18px;
+        height: 7px;
+        top: 205px;
+        left: 169px;
+    }
+
+    .profit__income1, .profit__income2, .profit__income3 {
+        font-size: 7px;
+    }
+
+    .profit__income1 {
+        top: 48px;
+        left: 254px;
+    }
+
+    .profit__income2 {
+        top: 123px;
+        left: 253px;
+    }
+
+    .profit__income3 {
+        top: 216px;
+        left: 257px;
+    }
+
+    .profit__percent100-1, .profit__percent100-2, .profit__percent300 {
+        font-size: 9px;
+    }
+
+    .profit__percent100-1 {
+        top: 59px;
+        left: 257px;
+    }
+
+    .profit__percent100-2 {
+        top: 226px;
+        left: 260px;
+    }
+
+    .profit__percent300 {
+        top: 132px;
+        left: 255px;
+    }
+
+    /* 9. Открой франшизу */
+
+    .franchise {
+        min-height: 127px;
+    }
+    
+    .franchise__input {
+        padding-top: 7px;
+        grid-row-gap: 14px;
+    }
+    
+    .franchise__text {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    
+    .franchise__name, .franchise__email, .franchise__tel, .franchise__city {
+        border-radius: 30px;
+        padding: 0;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .franchise__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .franchise__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .franchise__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .franchise__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .franchise__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        letter-spacing: normal;
+        padding: 0;
+    }
+    
+    .offer__privacy2 {
+        padding-top: 10px;
+        font-size: 5px;
+        letter-spacing: normal;
+    }
+
+    /* 10. Почему OMIMI? */
+
+    .why-omimi {
+        min-height: 250px;
+    }
+
+    .why-omimi-img {
+        width: 299px;
+        height: 21px;
+        padding-top: 16px;
+        padding-bottom: 23px;
+    }
+
+    .reasons {
+        gap: 6px;
+    }
+
+    .reasons__item {
+        font-size: 10px;
+        gap: 6px;
+    }
+
+    .cat-with-balloon {
+        width: 87px;
+        height: 106px;
+    }
+
+    .star {
+        width: 11px;
+        height: 10px;
+    }
+
+    .why-omimi__h4 {
+        font-size: 16px;
+        padding-top: 26px;
+    }
+
+    /* 11. Заработай с OMIMI */
+
+    .make-money {
+        min-height: 127px;
+    }
+    
+    .make-money__input {
+        padding-top: 7px;
+        grid-row-gap: 14px;
+    }
+    
+    .make-money__text {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    
+    .make-money__name, .make-money__email, .make-money__tel, .make-money__city {
+        border-radius: 30px;
+        padding: 0;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .make-money__name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .make-money__email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .make-money__tel {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .make-money__city {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .button__request {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 109px;
+        height: 22px;
+        font-size: 10px;
+        letter-spacing: normal;
+        padding: 0;
+    }
+    
+    .offer__privacy {
+        padding-top: 10px;
+        font-size: 5px;
+        letter-spacing: normal;
+    }
+
+    /* 12. Как стать партнером */
+
+    .become-partner {
+        min-height: 250px;
+    }
+
+    .become-partner__container {
+        padding-top: 20px;
+    }
+
+    .paws-left {
+        width: 41px;
+        height: 82px;
+    }
+
+    .paws-right {
+        width: 39px;
+        height: 87px;
+    }
+
+    .mini-logo {
+        width: 9px;
+        height: 14px;
+    }
+
+    .paws-hand-img {
+        width: 89px;
+        height: 66px;
+    }
+
+    .become-partner__text {
+        gap: 8px;
+    }
+
+    .partner__text {
+        font-size: 15px;
+    }
+
+    .for-partner {
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .business-plan {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    .contract {
+        padding: 5px 15px;
+        font-size: 11px;
+    }
+
+    .paws-hand {
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    /* 13. Футер */
+
+    .footer {
+        min-height: 139px;
+    }
+
+    .footer__container {
+        padding-top: 15px;
+    }
+
+    .footer__contacts {
+        gap: 15px;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .telegram {
+        display: none;
+    }
+
+    .footer__text {
+        font-size: 8px;
+    }
+
+    .footer__links {
+        display: none;
+    }
+}
